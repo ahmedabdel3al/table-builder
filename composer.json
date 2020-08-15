@@ -9,8 +9,10 @@
             "email": "ahmed.abdelaal1921@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {},
+    "minimum-stability": "stable",
+    "require": {
+        "boly/form-builder": "dev-master"
+    },
     "autoload": {
         "psr-4": {
             "Boly\\TableBuilder\\": "src/"
@@ -22,8 +24,5 @@
                 "Boly\\TableBuilder\\TableBuilderServiceProvider"
             ]
         }
-    },
-    "require-dev": {
-        "boly/form-builder": "dev-master"
     }
 }

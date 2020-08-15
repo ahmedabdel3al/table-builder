@@ -4,21 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5b947e3c9c4f664067e03f8d25ea6c26",
-    "packages": [],
-    "packages-dev": [
+    "content-hash": "dacefee2944bfb97772791bb64daf6e8",
+    "packages": [
         {
             "name": "boly/form-builder",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ahmedabdel3al/form-builder.git",
-                "reference": "d64cb6550ecad7eab26cb294141b50908c9c7dfa"
+                "reference": "256fd73d5aff9f72390434f40b7340d9bff543aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ahmedabdel3al/form-builder/zipball/d64cb6550ecad7eab26cb294141b50908c9c7dfa",
-                "reference": "d64cb6550ecad7eab26cb294141b50908c9c7dfa",
+                "url": "https://api.github.com/repos/ahmedabdel3al/form-builder/zipball/256fd73d5aff9f72390434f40b7340d9bff543aa",
+                "reference": "256fd73d5aff9f72390434f40b7340d9bff543aa",
                 "shasum": ""
             },
             "type": "library",
@@ -45,11 +44,12 @@
                 }
             ],
             "description": "build your form server side",
-            "time": "2020-08-15T22:30:18+00:00"
+            "time": "2020-08-15T23:01:25+00:00"
         }
     ],
+    "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": {
         "boly/form-builder": 20
     },
