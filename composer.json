@@ -22,5 +22,8 @@
                 "Boly\\TableBuilder\\TableBuilderServiceProvider"
             ]
         }
+    },
+    "require-dev": {
+        "boly/form-builder": "dev-master"
     }
 }

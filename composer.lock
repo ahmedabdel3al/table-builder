@@ -1,0 +1,60 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "5b947e3c9c4f664067e03f8d25ea6c26",
+    "packages": [],
+    "packages-dev": [
+        {
+            "name": "boly/form-builder",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ahmedabdel3al/form-builder.git",
+                "reference": "d64cb6550ecad7eab26cb294141b50908c9c7dfa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ahmedabdel3al/form-builder/zipball/d64cb6550ecad7eab26cb294141b50908c9c7dfa",
+                "reference": "d64cb6550ecad7eab26cb294141b50908c9c7dfa",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Boly\\TableBuilder\\FormBuilderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Boly\\FormBuilder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ahmed Abdelaal",
+                    "email": "ahmed.abdelaal1921@gmail.com"
+                }
+            ],
+            "description": "build your form server side",
+            "time": "2020-08-15T22:30:18+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "boly/form-builder": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
