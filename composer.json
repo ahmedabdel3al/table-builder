@@ -1,0 +1,26 @@
+{
+    "name": "boly/table-builder",
+    "description": "build vue table configration with filteration from server side",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ahmed Abdelaal",
+            "email": "ahmed.abdelaal1921@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Boly\\TableBuilder\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Boly\\TableBuilder\\TableBuilderServiceProvider"
+            ]
+        }
+    }
+}
