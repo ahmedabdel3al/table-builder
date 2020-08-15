@@ -1,6 +1,6 @@
 {
     "name": "boly/table-builder",
-    "description": "build vue table configration with filteration from server side",
+    "description": "build vue table configuration with filtration from server side",
     "type": "library",
     "license": "MIT",
     "authors": [
