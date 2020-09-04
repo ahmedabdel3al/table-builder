@@ -2,6 +2,7 @@
 
 namespace  Builder\TableBuilder;
 
+use Builder\Component\TableAction;
 use stdClass;
 
 class Table

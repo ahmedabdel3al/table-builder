@@ -2,12 +2,12 @@
 
 namespace  Builder\TableBuilder;
 
-use Closure;
 use Illuminate\Support\Str;
-use stdClass;
+use Builder\TraitS\TableBuilder\CanSee;
 
 class Column
 {
+    use CanSee;
     /**
      * Label Of Column
      *
@@ -25,33 +25,9 @@ class Column
      *
      * @var boolean
      */
-    public $sortable;
+    public $sortable = false;
 
-    /**
-     * Is Column Html
-     *
-     * @var boolean
-     */
-    public $html;
 
-    /**
-     * component value
-     *
-     * @var [array]
-     */
-    public $component;
-    /**
-     * Table Body Class 
-     *
-     * @var [string]
-     */
-    public $tdClass;
-    /**
-     * table head Class 
-     *
-     * @var [string]
-     */
-    public $thClass;
 
     /**
      *  filter
@@ -60,26 +36,8 @@ class Column
      */
     public $filterOptions;
 
-    public $canSee = true;
-
-    public function __construct(bool $sortable = false, bool $html = false, $component = [], string $tdClass = "text-center", string  $thClass = "text-center")
-    {
-
-        $this->sortable = $sortable;
-        $this->html = $html;
-        $this->component = $component;
-        $this->thClass = $thClass;
-        $this->tdClass = $tdClass;
-        $this->filterOptions = new stdClass;
-    }
 
 
-    public function filterOptions(FilterOption $filterOption)
-    {
-        $this->filterOptions = $filterOption;
-
-        return $this;
-    }
     public function field($label, $field = '')
     {
         if (!$field) {
@@ -90,20 +48,26 @@ class Column
 
         return $this;
     }
-    public function sortable()
+    /**
+     * Set Filter Option
+     *
+     * @param FilterOption $filterOption
+     * @return self
+     */
+    protected function filterOptions(FilterOption $filterOption)
     {
-        $this->sortable = true;
+        $this->filterOptions = $filterOption;
+
         return $this;
     }
-
-    public function showIf($condition)
+    /**
+     * Set Sortable Field   
+     *
+     * @return self
+     */
+    protected function sortable()
     {
-        if ($condition instanceof Closure) {
-            $this->canSee =  $condition($this) ? true : false;
-        }
-        if (is_bool($condition)) {
-            $this->canSee =  $condition;
-        }
+        $this->sortable = true;
         return $this;
     }
 }

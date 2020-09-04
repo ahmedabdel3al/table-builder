@@ -5,5 +5,5 @@ namespace Builder\Component\TableBuilder;
 
 interface Component
 {
-    public function component(array $attributes = []): self;
+    public function make(...$attributes): self;
 }

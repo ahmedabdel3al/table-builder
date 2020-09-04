@@ -19,5 +19,10 @@ class TableBuilderServiceProvider extends ServiceProvider
      * @return void
      */
     public function boot()
-    { }
+    {
+
+        $this->publishes([
+            __DIR__ . './config/action' => config_path('builder-action.php')
+        ], 'config');
+    }
 }
