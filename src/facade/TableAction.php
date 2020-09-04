@@ -1,8 +1,8 @@
 <?php
 
-namespace  Boly\TableBuilder\Facades;
+namespace  Builder\TableBuilder\Facades;
 
-use Boly\TableBuilder\TableAction as BolyTableAction;
+use Builder\TableBuilder\TableAction as BuilderTableAction;
 use Illuminate\Support\Facades\Facade;
 
 class TableAction extends Facade
@@ -10,6 +10,6 @@ class TableAction extends Facade
 
     public static function getFacadeAccessor()
     {
-        return BolyTableAction::class;
+        return BuilderTableAction::class;
     }
 }

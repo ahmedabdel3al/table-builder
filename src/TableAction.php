@@ -1,6 +1,6 @@
 <?php
 
-namespace  Boly\TableBuilder;
+namespace  Builder\TableBuilder;
 
 use Closure;
 use Illuminate\Support\Str;

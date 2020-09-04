@@ -1,6 +1,6 @@
 <?php
 
-namespace  Boly\TableBuilder;
+namespace  Builder\TableBuilder;
 
 use Closure;
 use Illuminate\Support\Str;
@@ -80,15 +80,6 @@ class Column
 
         return $this;
     }
-    public function component(string $name, array $attributes = [])
-    {
-        $this->html = true;
-        $this->component['name'] = $name;
-
-        $this->component = array_merge($this->component, $attributes);
-        return $this;
-    }
-
     public function field($label, $field = '')
     {
         if (!$field) {

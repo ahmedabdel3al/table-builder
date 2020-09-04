@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dacefee2944bfb97772791bb64daf6e8",
+    "content-hash": "978ee53059017105efb2fed1b78c2484",
     "packages": [
         {
             "name": "boly/form-builder",
@@ -12,19 +12,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ahmedabdel3al/form-builder.git",
-                "reference": "256fd73d5aff9f72390434f40b7340d9bff543aa"
+                "reference": "109e975d1e21075965e3f4690dd657a3ff0f9044"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ahmedabdel3al/form-builder/zipball/256fd73d5aff9f72390434f40b7340d9bff543aa",
-                "reference": "256fd73d5aff9f72390434f40b7340d9bff543aa",
+                "url": "https://api.github.com/repos/ahmedabdel3al/form-builder/zipball/109e975d1e21075965e3f4690dd657a3ff0f9044",
+                "reference": "109e975d1e21075965e3f4690dd657a3ff0f9044",
                 "shasum": ""
             },
             "type": "library",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Boly\\TableBuilder\\FormBuilderServiceProvider"
+                        "Boly\\FormBuilder\\FormBuilderServiceProvider"
                     ]
                 }
             },
@@ -44,7 +44,7 @@
                 }
             ],
             "description": "build your form server side",
-            "time": "2020-08-15T23:01:25+00:00"
+            "time": "2020-08-15T23:20:25+00:00"
         }
     ],
     "packages-dev": [],

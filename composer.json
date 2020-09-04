@@ -1,5 +1,5 @@
 {
-    "name": "boly/table-builder",
+    "name": "builder/table-builder",
     "description": "build vue table configuration with filtration from server side",
     "type": "library",
     "license": "MIT",
@@ -15,13 +15,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Boly\\TableBuilder\\": "src/"
+            "Builder\\TableBuilder\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Boly\\TableBuilder\\TableBuilderServiceProvider"
+                "Builder\\TableBuilder\\TableBuilderServiceProvider"
             ]
         }
     }
