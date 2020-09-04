@@ -22,7 +22,7 @@ class TableBuilderServiceProvider extends ServiceProvider
     {
 
         $this->publishes([
-            __DIR__ . '/config/action' => config_path('builder-action.php')
-        ], 'config');
+            __DIR__ . '/config/action.php' => config_path('builder-action.php')
+        ]);
     }
 }
